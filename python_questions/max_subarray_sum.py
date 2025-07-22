@@ -1,8 +1,13 @@
+"""
+Write a Python function to find the maximum subarray sum in a given array of integers.
+The function should return a list containing the maximum sum, the start index, and the end index of the subarray.
+
+Constraints
+The input variable must be a list of integers.
+The function must return a list with three elements: the maximum sum (an integer), the start index (an integer), and the end index (an integer).
+The function should use an iterative approach and cannot use eval or lambda functions.
+"""
 def max_subarray_sum(arr):
-    """
-    :type input: List[int]
-    :rtype: List[int]
-    """
     if not arr:
         return []
 
@@ -23,7 +28,7 @@ def max_subarray_sum(arr):
 
     return [max_sum, start, end]
 
-
+# Test cases for the max_subarray_sum function
 test1 =[-2, 1, -3, 4, -1, 2, 1, -5, 4]
 test2 = [1, 2, 3, 4, 5]
 test3 = [-1, -2, -3, -4, -5]
